@@ -10,9 +10,9 @@ How many times will the mother see the ball pass in front of her window (includi
 
 ###Three conditions must be met for a valid experiment:
 
-    *Float parameter "h" in meters must be greater than 0
-    *Float parameter "bounce" must be greater than 0 and less than 1
-    *Float parameter "window" must be less than h.
+    * Float parameter "h" in meters must be greater than 0
+    * Float parameter "bounce" must be greater than 0 and less than 1
+    * Float parameter "window" must be less than h.
 
 If all three conditions above are fulfilled, return a positive integer, otherwise return -1.
 Note:
