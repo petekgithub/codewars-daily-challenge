@@ -12,13 +12,15 @@ minMax([1])           == [1, 1]
 */
 
 // looong way :(
-function minMax(arr){
-  let sorted = arr.sort(function(a,b){return a-b} )
+function minMax(arr) {
+  let sorted = arr.sort(function (a, b) {
+    return a - b;
+  });
   //console.log(sorted)
-  return [sorted[0],sorted[sorted.length-1]]
+  return [sorted[0], sorted[sorted.length - 1]];
 }
 
 // easy way :)
-function minMax(arr){
+function minMax(arr) {
   return [Math.min(...arr), Math.max(...arr)];
 }

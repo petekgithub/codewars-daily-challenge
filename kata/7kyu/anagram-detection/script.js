@@ -11,8 +11,8 @@ Examples
 "Buckethead" is an anagram of "DeathCubeK"
  */
 
-var isAnagram = function(test, original) {
+var isAnagram = function (test, original) {
   var test = test.toLowerCase().split('').sort().join('');
   var original = original.toLowerCase().split('').sort().join('');
-  return test === original
+  return test === original;
 };

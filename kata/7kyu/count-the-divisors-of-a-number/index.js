@@ -11,12 +11,12 @@ Examples (input --> output)
 30 --> 8 (1, 2, 3, 5, 6, 10, 15, 30)
  */
 
-function getDivisorsCnt(n){
+function getDivisorsCnt(n) {
   let num = 0;
-  for(let i= 0; i <= n; i++) {
-    if (n % i == 0){
-      num +=1;
+  for (let i = 0; i <= n; i++) {
+    if (n % i == 0) {
+      num += 1;
     }
   }
-return num;
+  return num;
 }

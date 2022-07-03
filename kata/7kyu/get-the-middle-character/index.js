@@ -21,12 +21,10 @@ The middle character(s) of the word represented as a string.
 
 function getMiddle(s) {
   var middle = s.length / 2;
-  return (s.length % 2) 
-    ? s.charAt(Math.floor(middle))
-    : s.slice(middle - 1, middle + 1);
+  return s.length % 2 ? s.charAt(Math.floor(middle)) : s.slice(middle - 1, middle + 1);
 }
 
 // better way
 function getMiddle(s) {
-  return s.length % 2 ? s.substr(s.length / 2, 1) : s.substr((s.length / 2) - 1, 2);
+  return s.length % 2 ? s.substr(s.length / 2, 1) : s.substr(s.length / 2 - 1, 2);
 }

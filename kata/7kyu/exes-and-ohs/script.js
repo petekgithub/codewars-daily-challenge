@@ -13,19 +13,18 @@ XO("zzoo") => false
 function XO(str) {
   let xNums = '';
   let oNums = '';
-  for (let i=0; i<str.length; i++) {
+  for (let i = 0; i < str.length; i++) {
     if (str[i].toLowerCase() === 'x') {
       xNums += str[i];
-      } else if (str[i].toLowerCase() === 'o') {
-        oNums += str[i];
-      }
+    } else if (str[i].toLowerCase() === 'o') {
+      oNums += str[i];
     }
-    return xNums.length === oNums.length ;
+  }
+  return xNums.length === oNums.length;
 }
-
 
 // better solution
-const XO = str => {
+const XO = (str) => {
   str = str.toLowerCase().split('');
-  return str.filter(x => x === 'x').length === str.filter(x => x === 'o').length;
-}
+  return str.filter((x) => x === 'x').length === str.filter((x) => x === 'o').length;
+};

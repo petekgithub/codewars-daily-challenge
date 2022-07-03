@@ -18,6 +18,6 @@ You can assume that you do get an array and if the array is empty, return 0.
  */
 
 // Sum Numbers
-function sum (numbers) {
+function sum(numbers) {
   return numbers.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
-};
+}

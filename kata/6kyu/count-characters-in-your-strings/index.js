@@ -5,11 +5,11 @@ What if the string is empty? Then the result should be empty object literal, {}.
 
 */
 
-function count (string) {  
+function count(string) {
   let count = {};
-  let splitString = string.split('')
-  splitString.forEach(function(s) {
-     count[s] ? count[s]++ : count[s] = 1;
+  let splitString = string.split('');
+  splitString.forEach(function (s) {
+    count[s] ? count[s]++ : (count[s] = 1);
   });
   return count;
 }

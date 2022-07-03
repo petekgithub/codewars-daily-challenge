@@ -10,34 +10,35 @@ For input [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, -11, -12, -13, -14, -15], you should r
 
 */
 
-
 // naive solution
 function countPositivesSumNegatives(input) {
-  const answer = []
-  let positiveSum = 0
-  let negativeSum = 0
+  const answer = [];
+  let positiveSum = 0;
+  let negativeSum = 0;
 
-  if(input && input.length) {
-    for(let i = 0; i < input.length; i++) {
-      if(input[i] > 0) {
-          positiveSum += 1
+  if (input && input.length) {
+    for (let i = 0; i < input.length; i++) {
+      if (input[i] > 0) {
+        positiveSum += 1;
       } else {
-          negativeSum += input[i]
+        negativeSum += input[i];
       }
     }
-    answer.push(positiveSum)
-    answer.push(negativeSum)
+    answer.push(positiveSum);
+    answer.push(negativeSum);
   }
-  return answer
+  return answer;
 }
 
 // with reduce
 function countPositivesSumNegatives(input) {
-  return (input && input.length >= 1) 
-    ? input.reduce((acc, n) => {
-        n > 0 ? acc[0]++ : acc[1] += n;
-        return acc;
-      }, [0, 0]) 
-  : [];
+  return input && input.length >= 1
+    ? input.reduce(
+        (acc, n) => {
+          n > 0 ? acc[0]++ : (acc[1] += n);
+          return acc;
+        },
+        [0, 0],
+      )
+    : [];
 }
-

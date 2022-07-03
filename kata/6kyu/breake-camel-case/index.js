@@ -6,4 +6,3 @@ Example
 "identifier"   =>  "identifier"
 ""             =>  ""
  */
-

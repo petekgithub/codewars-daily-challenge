@@ -11,11 +11,11 @@ There will always be at least one number in the input string.
 Output string must be two numbers separated by a single space, and highest number is first.
  */
 
-function highAndLow(numbers){
-  numbers = numbers.split(" ");
+function highAndLow(numbers) {
+  numbers = numbers.split(' ');
 
-  let minNum = Math.min(...numbers)
-  let maxNum = Math.max(...numbers)
+  let minNum = Math.min(...numbers);
+  let maxNum = Math.max(...numbers);
 
-  return `${maxNum} ${minNum}`
+  return `${maxNum} ${minNum}`;
 }

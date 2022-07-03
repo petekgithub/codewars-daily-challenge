@@ -15,12 +15,11 @@ Examples:(Input --> Output)
 5 --> 1 + 1/4 + 1/7 + 1/10 + 1/13 --> "1.57"
  */
 
-function SeriesSum(n)
-{
-  if(n === 0) return "0.00"
+function SeriesSum(n) {
+  if (n === 0) return '0.00';
   let acc = 1;
-  for(let i = 1; i < n; i++) {
-    acc += 1 / (1+3*i)
+  for (let i = 1; i < n; i++) {
+    acc += 1 / (1 + 3 * i);
   }
-  return `${acc.toFixed(2)}`
+  return `${acc.toFixed(2)}`;
 }

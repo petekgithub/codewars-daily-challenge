@@ -1,4 +1,3 @@
-
 /**
 Description:
 Our football team finished the championship. The result of each match look like "x:y". Results of all matches are recorded in the collection.
@@ -18,12 +17,10 @@ there are 10 matches in the championship
 */
 
 function points(games) {
-  return games.reduce(function(accumulator, currentItem) {
-      
-    const [x,y] = currentItem.split(':').map(Number);  //Number works despite passing extra arguments in
-    if( x > y) return accumulator+3;
-    if( x < y) return accumulator;
-    return accumulator+1;
-    
-  },0) 
+  return games.reduce(function (accumulator, currentItem) {
+    const [x, y] = currentItem.split(':').map(Number); //Number works despite passing extra arguments in
+    if (x > y) return accumulator + 3;
+    if (x < y) return accumulator;
+    return accumulator + 1;
+  }, 0);
 }

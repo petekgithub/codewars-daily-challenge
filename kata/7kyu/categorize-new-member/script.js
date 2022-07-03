@@ -15,20 +15,17 @@ output = ["Open", "Open", "Senior", "Open", "Open", "Senior"]
 
 */
 
-
 // to be a senior: a member must be at least 55y and have a handicap greater than 7
 // handicap ranges: from -2 to +26.
-function openOrSenior(data){
-  return data.map((person) => { 
-  const [age, handicap] = person
-    
-  return age >= 55 && handicap > 7 ? 'Senior' : 'Open'
-  
-  })
+function openOrSenior(data) {
+  return data.map((person) => {
+    const [age, handicap] = person;
+
+    return age >= 55 && handicap > 7 ? 'Senior' : 'Open';
+  });
 }
 
-
-// best 
-function openOrSenior(data){
-  return data.map(([age, handicap]) => (age > 54 && handicap > 7) ? 'Senior' : 'Open');
+// best
+function openOrSenior(data) {
+  return data.map(([age, handicap]) => (age > 54 && handicap > 7 ? 'Senior' : 'Open'));
 }
