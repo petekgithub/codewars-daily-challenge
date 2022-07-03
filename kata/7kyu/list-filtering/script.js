@@ -7,7 +7,7 @@ filter_list([1,'a','b',0,15]) == [1,0,15]
 */
 
 function filter_list(l) {
-  return l.filter(Number.isInteger)
+  return l.filter(Number.isInteger);
 }
 
 // .filter returns a new method

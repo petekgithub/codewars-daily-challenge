@@ -1,3 +1,3 @@
-String.prototype.isUpperCase = function() {
+String.prototype.isUpperCase = function () {
   return this.toUpperCase() == this;
-}
+};

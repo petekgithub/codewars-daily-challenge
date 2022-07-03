@@ -10,9 +10,8 @@ The parameter of accum is a string which includes only letters from a..z and A..
  */
 
 function accum(s) {
-	return s
+  return s
     .split('')
-    .map((a,index) => (a.toUpperCase() + (a.toLowerCase().repeat(index))))
-    .join('-')
-    
+    .map((a, index) => a.toUpperCase() + a.toLowerCase().repeat(index))
+    .join('-');
 }

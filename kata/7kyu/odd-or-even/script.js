@@ -20,5 +20,5 @@ Have fun!
  */
 
 function oddOrEven(array) {
-  return array.reduce((acc,currentValue) => (acc + currentValue),0) %2 ? "odd" : "even" 
+  return array.reduce((acc, currentValue) => acc + currentValue, 0) % 2 ? 'odd' : 'even';
 }

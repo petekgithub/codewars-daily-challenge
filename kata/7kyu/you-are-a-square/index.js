@@ -17,7 +17,7 @@ Examples
  4  =>  true
  */
 
- //Number.isInteger() returns true if the value is an integer of the datatype Number:
- var isSquare = function(n){
+//Number.isInteger() returns true if the value is an integer of the datatype Number:
+var isSquare = function (n) {
   return Number.isInteger(Math.sqrt(n));
-}
+};

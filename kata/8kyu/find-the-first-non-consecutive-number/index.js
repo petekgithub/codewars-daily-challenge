@@ -21,10 +21,9 @@ Julia: nothing
 Nim: none(int) (See options)
  */
 
-
 function firstNonConsecutive(arr) {
   for (let i = 1; i < arr.length; i++) {
-      if (arr[i - 1] + 1 !== arr[i]) return arr[i];
+    if (arr[i - 1] + 1 !== arr[i]) return arr[i];
   }
   return null;
 }

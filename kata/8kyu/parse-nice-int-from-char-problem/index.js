@@ -1,3 +1,3 @@
-function getAge(inputString){
-  return parseInt(inputString, 10)
+function getAge(inputString) {
+  return parseInt(inputString, 10);
 }

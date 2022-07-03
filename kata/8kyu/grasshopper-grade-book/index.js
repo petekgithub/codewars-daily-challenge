@@ -12,8 +12,7 @@ Tested values are all between 0 and 100. Theres is no need to check for negative
 
  */
 
-
-function getGrade (s1, s2, s3) {
+function getGrade(s1, s2, s3) {
   const average = (s1 + s2 + s3) / 3;
   if (average >= 90 && average <= 100) {
     return 'A';
@@ -27,5 +26,5 @@ function getGrade (s1, s2, s3) {
   if (average >= 60 && average < 70) {
     return 'D';
   }
-  return 'F'
+  return 'F';
 }

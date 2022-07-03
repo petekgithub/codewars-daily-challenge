@@ -8,12 +8,10 @@ Examples (Input -> Output)
 * [5]                             -> min = 5, max = 5
  */
 
-
- var min = function(list){
+var min = function (list) {
   return Math.min(...list);
-}
+};
 
-var max = function(list){
+var max = function (list) {
   return Math.max(...list);
-
-}
+};

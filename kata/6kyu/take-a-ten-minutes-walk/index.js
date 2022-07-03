@@ -5,16 +5,17 @@
 
  Note: you will always receive a valid array (string in COBOL) containing a random assortment of direction letters ('n', 's', 'e', or 'w' only). It will never give you an empty array (that's not a walk, that's standing still!).
 
- */ 
+ */
 
- function isValidWalk(walk) {
-  let northSouth = 0, westEast = 0; 
-    for (let myWalk of walk) { 
-      if (myWalk == 'n') northSouth += 1; 
-      if (myWalk == 's') northSouth -= 1; 
-      if (myWalk == 'w') westEast += 1; 
-      if (myWalk == 'e') westEast -= 1; 
-    } 
+function isValidWalk(walk) {
+  let northSouth = 0,
+    westEast = 0;
+  for (let myWalk of walk) {
+    if (myWalk == 'n') northSouth += 1;
+    if (myWalk == 's') northSouth -= 1;
+    if (myWalk == 'w') westEast += 1;
+    if (myWalk == 'e') westEast -= 1;
+  }
 
-    return walk.length == 10 && northSouth === 0 && westEast === 0; 
+  return walk.length == 10 && northSouth === 0 && westEast === 0;
 }

@@ -22,20 +22,20 @@ Note: n and p will always be given as strictly positive integers.
 digPow(89, 1) should return 1 since 8¹ + 9² = 89 = 89 * 1
 digPow(92, 1) should return -1 since there is no k such as 9¹ + 2² equals 92 * k
  */
-function digPow(n, p){
+function digPow(n, p) {
   let string = n.toString();
   let len = string.length;
   let result = 0;
-  for(var i = 0; i < len ; i++) {
-    let a = parseInt(string.charAt(i),10);
-    result +=  Math.pow(a, p + i)
+  for (var i = 0; i < len; i++) {
+    let a = parseInt(string.charAt(i), 10);
+    result += Math.pow(a, p + i);
   }
-  var x = Math.pow(n,p);
-  if(result === x){
+  var x = Math.pow(n, p);
+  if (result === x) {
     return p;
-    } else if(result % n === 0) {
+  } else if (result % n === 0) {
     return result / n;
-  }else {
-    return -1  
+  } else {
+    return -1;
   }
 }

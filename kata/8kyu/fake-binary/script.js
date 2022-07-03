@@ -4,10 +4,9 @@ Given a string of digits, you should replace any digit below 5 with '0' and any 
 Note: input will never be an empty string
  */
 
-function fakeBin(x){
+function fakeBin(x) {
   return x
     .split('')
-    .map((num) => (num >= 5) ? 1 : 0)
-    .join('')
-  
+    .map((num) => (num >= 5 ? 1 : 0))
+    .join('');
 }

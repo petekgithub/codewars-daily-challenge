@@ -11,8 +11,5 @@ Names given are always valid strings.
  */
 
 function areYouPlayingBanjo(name) {
-  return name + (name[0].toLowerCase() === 'r' ? ' plays' : ' does not play') + ' banjo'
+  return name + (name[0].toLowerCase() === 'r' ? ' plays' : ' does not play') + ' banjo';
 }
-
-
-

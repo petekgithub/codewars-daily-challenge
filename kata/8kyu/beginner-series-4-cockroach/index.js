@@ -9,5 +9,5 @@ Note! The input is a Real number (actual type is language dependent) and is >= 0
 
 function cockroachSpeed(s) {
   // 1 km/h = 27.777778 cm/s
-  return Math.floor(s*27.777778)
+  return Math.floor(s * 27.777778);
 }

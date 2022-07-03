@@ -7,7 +7,6 @@ summation(2) -> 3
 1 + 2
  */
 
-
 // naive solution
 var summation = function (num) {
   let sum = 0;
@@ -15,10 +14,9 @@ var summation = function (num) {
     sum += i;
   }
   return sum;
-}
-
+};
 
 // better solution
 var summation = function (num) {
   return (num * (num + 1)) / 2;
-}
+};

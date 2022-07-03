@@ -1,0 +1,23 @@
+{
+  "name": "codewars-daily-challange",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "format": "prettier --write ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcobiedermann/codewars-daily-challange.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marcobiedermann/codewars-daily-challange/issues"
+  },
+  "homepage": "https://github.com/marcobiedermann/codewars-daily-challange#readme",
+  "devDependencies": {
+    "prettier": "^2.7.1"
+  }
+}

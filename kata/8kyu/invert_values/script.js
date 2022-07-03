@@ -10,11 +10,11 @@ You can assume that all values are integers. Do not mutate the input array/list.
  */
 
 //The Math.abs() method returns the absolute value of a number
- function invert(array) {
+function invert(array) {
   return array.map((value) => (Math.abs(value) >= 0 ? value * -1 : value));
 }
- 
+
 // best
 function invert(array) {
-  return array.map( x => x === 0 ? x : -x);
+  return array.map((x) => (x === 0 ? x : -x));
 }
