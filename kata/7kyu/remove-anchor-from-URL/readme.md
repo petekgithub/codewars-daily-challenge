@@ -7,9 +7,3 @@ Examples
 "www.codewars.com?page=1" -->"www.codewars.com?page=1"
 ```
 
-
-Examples
-```
-"www.codewars.com#about" --> "www.codewars.com"
-"www.codewars.com?page=1" -->"www.codewars.com?page=1"
-```
