@@ -1,1 +1,1 @@
-const square = (n) => n*2; 
+const square = (n) => n**2; 
